@@ -4,203 +4,303 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Legacy Chairs | Premium Seating</title>
-  <meta name="description" content="Legacy Chairs - Premium chairs designed for comfort, style and legacy.">
+  <title>LEGACY — Premium Chairs</title>
+
+  <meta
+    name="description"
+    content="Legacy Chairs — Premium seating engineered for comfort, designed for presence."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="cursor-glow"></div>
+  <!-- ================= CURSOR ================= -->
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <a href="#" class="logo">
-      <span class="logo-mark">L</span>
-      <span>
+  <div class="cursor">
+    <div class="cursor-dot"></div>
+  </div>
+
+  <div class="noise"></div>
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+
+    <a href="#home" class="brand">
+
+      <div class="brand-symbol">
+        L
+      </div>
+
+      <div class="brand-name">
         <strong>LEGACY</strong>
-        <small>CHAIRS</small>
-      </span>
+        <span>CHAIRS</span>
+      </div>
+
     </a>
 
-    <nav>
+
+    <nav class="desktop-nav">
+
       <a href="#home">Home</a>
       <a href="#collection">Collection</a>
-      <a href="#about">About</a>
+      <a href="#story">Our Story</a>
       <a href="#contact">Contact</a>
+
     </nav>
 
-    <button class="menu-btn" id="menuBtn">
-      ☰
+
+    <a href="#collection" class="header-button">
+      Explore
+      <span>↗</span>
+    </a>
+
+
+    <button class="mobile-menu-button" id="menuButton">
+      <span></span>
+      <span></span>
     </button>
+
   </header>
 
-  <!-- MOBILE MENU -->
+
+  <!-- ================= MOBILE MENU ================= -->
+
   <div class="mobile-menu" id="mobileMenu">
+
     <a href="#home">Home</a>
     <a href="#collection">Collection</a>
-    <a href="#about">About</a>
+    <a href="#story">Our Story</a>
     <a href="#contact">Contact</a>
+
   </div>
 
 
-  <!-- HERO -->
+  <!-- ================= HERO ================= -->
+
   <main>
 
     <section class="hero" id="home">
+
+      <div class="hero-background"></div>
+
+      <div class="hero-grid"></div>
+
 
       <div class="hero-content">
 
         <div class="eyebrow">
           <span></span>
-          PREMIUM SEATING COLLECTION
+          THE ART OF SEATING
         </div>
+
 
         <h1>
-          Sit in
-          <span>Luxury.</span>
+          Designed
+          <br>
+          to be
+          <em>remembered.</em>
         </h1>
 
-        <p>
-          Crafted for comfort. Designed for presence.
-          Discover premium chairs made to become part of your legacy.
+
+        <p class="hero-description">
+
+          Premium chairs engineered around the human experience.
+          A balance of sculptural design, enduring materials
+          and exceptional comfort.
+
         </p>
 
-        <div class="hero-buttons">
-          <a href="#collection" class="btn primary">
-            Explore Collection
+
+        <div class="hero-actions">
+
+          <a href="#collection" class="button button-gold">
+
+            Discover Collection
+
             <span>→</span>
+
           </a>
 
-          <a href="#about" class="btn secondary">
-            Our Story
+
+          <a href="#story" class="button button-outline">
+
+            Our Philosophy
+
           </a>
+
         </div>
 
-        <div class="hero-stats">
+
+        <div class="hero-metrics">
+
           <div>
-            <strong>10+</strong>
-            <span>Premium Designs</span>
+            <strong>01</strong>
+            <span>Precision Design</span>
           </div>
 
           <div>
-            <strong>5★</strong>
-            <span>Quality Focus</span>
+            <strong>02</strong>
+            <span>Premium Materials</span>
           </div>
 
           <div>
-            <strong>100%</strong>
-            <span>Comfort Driven</span>
+            <strong>03</strong>
+            <span>Built for Life</span>
           </div>
+
         </div>
 
       </div>
 
 
-      <!-- 3D CHAIR -->
-      <div class="hero-visual">
+      <!-- 3D HERO -->
 
-        <div class="orb"></div>
+      <div class="hero-3d">
 
-        <div class="chair-scene" id="heroChair">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
 
-          <div class="chair-shadow"></div>
+        <div class="hero-glow"></div>
 
-          <div class="chair">
-            <div class="chair-back">
-              <div class="back-detail"></div>
-            </div>
+        <div id="heroCanvas"></div>
 
-            <div class="chair-seat"></div>
 
-            <div class="arm arm-left"></div>
-            <div class="arm arm-right"></div>
+        <div class="floating-label label-top">
 
-            <div class="chair-base"></div>
+          <span class="label-icon">✦</span>
 
-            <div class="chair-leg leg-1"></div>
-            <div class="chair-leg leg-2"></div>
-            <div class="chair-leg leg-3"></div>
-            <div class="chair-leg leg-4"></div>
+          <div>
+            <strong>LEGACY X1</strong>
+            <small>Executive Collection</small>
           </div>
 
         </div>
 
-        <div class="floating-tag tag-one">
-          <span>✦</span>
-          Premium Craft
+
+        <div class="floating-label label-bottom">
+
+          <span class="label-check">✓</span>
+
+          <div>
+            <strong>360° MOTION</strong>
+            <small>Interactive 3D Experience</small>
+          </div>
+
         </div>
 
-        <div class="floating-tag tag-two">
-          <span>✓</span>
-          Ergonomic
+
+        <div class="drag-hint">
+          <span>↔</span>
+          DRAG TO ROTATE
         </div>
+
+      </div>
+
+
+      <div class="scroll-indicator">
+
+        <span>SCROLL</span>
+
+        <div></div>
 
       </div>
 
     </section>
 
 
-    <!-- MARQUEE -->
-    <div class="marquee">
-      <div class="marquee-track">
-        <span>CRAFTED FOR COMFORT</span>
-        <b>✦</b>
-        <span>DESIGNED FOR LEGACY</span>
-        <b>✦</b>
-        <span>PREMIUM MATERIALS</span>
-        <b>✦</b>
-        <span>CRAFTED FOR COMFORT</span>
-        <b>✦</b>
-        <span>DESIGNED FOR LEGACY</span>
-        <b>✦</b>
+    <!-- ================= BRAND STRIP ================= -->
+
+    <section class="brand-strip">
+
+      <div class="strip-track">
+
+        <span>PRECISION</span>
+        <i>✦</i>
+
+        <span>COMFORT</span>
+        <i>✦</i>
+
+        <span>CRAFT</span>
+        <i>✦</i>
+
+        <span>CHARACTER</span>
+        <i>✦</i>
+
+        <span>PRECISION</span>
+        <i>✦</i>
+
+        <span>COMFORT</span>
+        <i>✦</i>
+
+        <span>CRAFT</span>
+        <i>✦</i>
+
+        <span>CHARACTER</span>
+        <i>✦</i>
+
       </div>
-    </div>
+
+    </section>
 
 
-    <!-- COLLECTION -->
+    <!-- ================= COLLECTION ================= -->
+
     <section class="collection section" id="collection">
 
-      <div class="section-heading">
+      <div class="section-top">
 
         <div>
+
           <div class="eyebrow">
             <span></span>
             THE COLLECTION
           </div>
 
           <h2>
-            Find your
-            <em>perfect seat.</em>
+            Seating with
+            <em>presence.</em>
           </h2>
+
         </div>
 
+
         <p>
-          From executive offices to modern living spaces,
-          every Legacy chair is designed around comfort and character.
+
+          Explore our signature collection.
+          Each silhouette has been developed to combine
+          contemporary aesthetics with everyday comfort.
+
         </p>
 
       </div>
 
 
       <!-- FILTERS -->
+
       <div class="filters">
 
         <button class="filter active" data-filter="all">
           All
         </button>
 
-        <button class="filter" data-filter="office">
-          Office
+        <button class="filter" data-filter="executive">
+          Executive
         </button>
 
         <button class="filter" data-filter="gaming">
-          Gaming
+          Performance
         </button>
 
         <button class="filter" data-filter="lounge">
@@ -211,215 +311,384 @@
 
 
       <!-- PRODUCTS -->
+
       <div class="products">
 
-        <article class="product-card" data-category="office">
 
-          <div class="product-image dark-chair">
-            <div class="mini-chair">
-              <div class="mini-back"></div>
-              <div class="mini-seat"></div>
-              <div class="mini-arm left"></div>
-              <div class="mini-arm right"></div>
-              <div class="mini-stand"></div>
-            </div>
+        <!-- PRODUCT 01 -->
 
-            <span class="product-number">01</span>
+        <article
+          class="product-card"
+          data-category="executive"
+          data-product="Legacy X1 Executive"
+          data-price="₹14,999"
+        >
+
+          <div class="product-visual">
+
+            <div class="product-glow"></div>
+
+            <div
+              class="product-canvas"
+              data-chair="black"
+            ></div>
+
+            <span class="product-index">
+              01
+            </span>
+
+            <span class="product-tag">
+              SIGNATURE
+            </span>
+
           </div>
 
-          <div class="product-info">
+
+          <div class="product-details">
+
             <div>
-              <h3>Legacy Executive</h3>
-              <p>Executive Office Chair</p>
+
+              <h3>Legacy X1</h3>
+
+              <p>
+                Executive Collection
+              </p>
+
             </div>
 
-            <strong>₹14,999</strong>
+
+            <strong>
+              ₹14,999
+            </strong>
+
           </div>
 
-          <button class="enquire" data-product="Legacy Executive">
-            Enquire →
+
+          <button class="product-button">
+
+            View Details
+
+            <span>→</span>
+
           </button>
 
         </article>
 
 
-        <article class="product-card" data-category="gaming">
+        <!-- PRODUCT 02 -->
 
-          <div class="product-image red-chair">
+        <article
+          class="product-card"
+          data-category="gaming"
+          data-product="Legacy GT Performance"
+          data-price="₹18,499"
+        >
 
-            <div class="mini-chair">
-              <div class="mini-back"></div>
-              <div class="mini-seat"></div>
-              <div class="mini-arm left"></div>
-              <div class="mini-arm right"></div>
-              <div class="mini-stand"></div>
-            </div>
+          <div class="product-visual red">
 
-            <span class="product-number">02</span>
+            <div class="product-glow"></div>
+
+            <div
+              class="product-canvas"
+              data-chair="red"
+            ></div>
+
+            <span class="product-index">
+              02
+            </span>
 
           </div>
 
-          <div class="product-info">
+
+          <div class="product-details">
+
             <div>
-              <h3>Legacy X</h3>
-              <p>Performance Gaming Chair</p>
+
+              <h3>Legacy GT</h3>
+
+              <p>
+                Performance Collection
+              </p>
+
             </div>
 
-            <strong>₹18,499</strong>
+
+            <strong>
+              ₹18,499
+            </strong>
+
           </div>
 
-          <button class="enquire" data-product="Legacy X Gaming Chair">
-            Enquire →
+
+          <button class="product-button">
+
+            View Details
+
+            <span>→</span>
+
           </button>
 
         </article>
 
 
-        <article class="product-card" data-category="lounge">
+        <!-- PRODUCT 03 -->
 
-          <div class="product-image cream-chair">
+        <article
+          class="product-card"
+          data-category="lounge"
+          data-product="Legacy Lounge One"
+          data-price="₹12,999"
+        >
 
-            <div class="mini-chair">
-              <div class="mini-back"></div>
-              <div class="mini-seat"></div>
-              <div class="mini-arm left"></div>
-              <div class="mini-arm right"></div>
-              <div class="mini-stand"></div>
-            </div>
+          <div class="product-visual cream">
 
-            <span class="product-number">03</span>
+            <div class="product-glow"></div>
+
+            <div
+              class="product-canvas"
+              data-chair="cream"
+            ></div>
+
+            <span class="product-index">
+              03
+            </span>
 
           </div>
 
-          <div class="product-info">
+
+          <div class="product-details">
 
             <div>
+
               <h3>Legacy Lounge</h3>
-              <p>Premium Lounge Chair</p>
+
+              <p>
+                Lounge Collection
+              </p>
+
             </div>
 
-            <strong>₹12,999</strong>
+
+            <strong>
+              ₹12,999
+            </strong>
 
           </div>
 
-          <button class="enquire" data-product="Legacy Lounge Chair">
-            Enquire →
+
+          <button class="product-button">
+
+            View Details
+
+            <span>→</span>
+
           </button>
 
         </article>
 
 
-        <article class="product-card" data-category="office">
+        <!-- PRODUCT 04 -->
 
-          <div class="product-image brown-chair">
+        <article
+          class="product-card"
+          data-category="executive"
+          data-product="Legacy Classic"
+          data-price="₹10,999"
+        >
 
-            <div class="mini-chair">
-              <div class="mini-back"></div>
-              <div class="mini-seat"></div>
-              <div class="mini-arm left"></div>
-              <div class="mini-arm right"></div>
-              <div class="mini-stand"></div>
-            </div>
+          <div class="product-visual brown">
 
-            <span class="product-number">04</span>
+            <div class="product-glow"></div>
+
+            <div
+              class="product-canvas"
+              data-chair="brown"
+            ></div>
+
+            <span class="product-index">
+              04
+            </span>
 
           </div>
 
-          <div class="product-info">
+
+          <div class="product-details">
 
             <div>
+
               <h3>Legacy Classic</h3>
-              <p>Classic Work Chair</p>
+
+              <p>
+                Heritage Collection
+              </p>
+
             </div>
 
-            <strong>₹10,999</strong>
+
+            <strong>
+              ₹10,999
+            </strong>
 
           </div>
 
-          <button class="enquire" data-product="Legacy Classic Chair">
-            Enquire →
+
+          <button class="product-button">
+
+            View Details
+
+            <span>→</span>
+
           </button>
 
         </article>
 
+
       </div>
 
     </section>
 
 
-    <!-- ABOUT -->
-    <section class="about section" id="about">
+    <!-- ================= STORY ================= -->
 
-      <div class="about-visual">
+    <section class="story section" id="story">
 
-        <div class="about-ring"></div>
+      <div class="story-visual">
 
-        <div class="about-chair">
+        <div class="story-circle"></div>
 
-          <div class="about-back"></div>
-          <div class="about-seat"></div>
-          <div class="about-arm a1"></div>
-          <div class="about-arm a2"></div>
-          <div class="about-leg"></div>
-
+        <div class="story-number">
+          01
         </div>
 
-        <div class="experience-card">
-          <strong>LEGACY</strong>
-          <span>Built around you.</span>
+        <div class="story-word">
+          LEGACY
         </div>
 
       </div>
 
 
-      <div class="about-content">
+      <div class="story-content">
 
         <div class="eyebrow">
           <span></span>
-          WHY LEGACY
+          OUR PHILOSOPHY
         </div>
 
+
         <h2>
-          A chair isn't just
-          <em>furniture.</em>
+
+          Furniture becomes
+          <em>legacy</em>
+          when it becomes part
+          of your life.
+
         </h2>
 
-        <p>
-          It is where ideas begin, where decisions are made,
-          where conversations happen and where you spend some
-          of your most important hours.
-        </p>
 
         <p>
-          Legacy Chairs combines modern design, durable materials
-          and comfort-focused construction to create seating
-          that looks as good as it feels.
+
+          We believe a great chair should disappear beneath you.
+          The materials should feel natural. The movement should
+          feel effortless. The design should remain relevant years
+          after the first day.
+
         </p>
 
-        <div class="features">
 
-          <div class="feature">
+        <p>
+
+          Legacy was created around this idea:
+          exceptional seating should be experienced,
+          not simply looked at.
+
+        </p>
+
+
+        <div class="story-line"></div>
+
+
+        <div class="signature">
+
+          <span>
+            LEGACY
+          </span>
+
+          <small>
+            EST. 2026
+          </small>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section class="experience">
+
+      <div class="experience-inner">
+
+        <div class="eyebrow">
+          <span></span>
+          THE LEGACY STANDARD
+        </div>
+
+
+        <h2>
+          Made for the
+          <em>moments that matter.</em>
+        </h2>
+
+
+        <div class="experience-grid">
+
+          <div class="experience-item">
+
             <span>01</span>
-            <div>
-              <strong>Premium Materials</strong>
-              <p>Selected for durability and everyday comfort.</p>
-            </div>
+
+            <h3>
+              Ergonomic
+            </h3>
+
+            <p>
+              Comfort designed around natural movement
+              and long working sessions.
+            </p>
+
           </div>
 
-          <div class="feature">
+
+          <div class="experience-item">
+
             <span>02</span>
-            <div>
-              <strong>Modern Design</strong>
-              <p>Clean forms designed for contemporary spaces.</p>
-            </div>
+
+            <h3>
+              Durable
+            </h3>
+
+            <p>
+              Materials selected to withstand
+              everyday use without losing character.
+            </p>
+
           </div>
 
-          <div class="feature">
+
+          <div class="experience-item">
+
             <span>03</span>
-            <div>
-              <strong>Built for Comfort</strong>
-              <p>Designed around the way you actually sit.</p>
-            </div>
+
+            <h3>
+              Distinctive
+            </h3>
+
+            <p>
+              Sculptural silhouettes designed
+              to elevate the spaces around them.
+            </p>
+
           </div>
 
         </div>
@@ -429,104 +698,201 @@
     </section>
 
 
-    <!-- CTA -->
-    <section class="cta section" id="contact">
+    <!-- ================= CTA ================= -->
 
-      <div class="cta-glow"></div>
+    <section class="contact section" id="contact">
 
-      <div class="cta-content">
+      <div class="contact-background"></div>
+
+      <div class="contact-content">
 
         <div class="eyebrow">
           <span></span>
-          MAKE IT YOURS
+          START YOUR LEGACY
         </div>
 
+
         <h2>
-          Your next seat
-          <em>starts here.</em>
+
+          Find the chair
+          <br>
+          that feels
+          <em>like yours.</em>
+
         </h2>
 
+
         <p>
-          Tell us what you're looking for and our team
-          will help you find the right Legacy chair.
+
+          Tell us what you are looking for.
+          Our team will help you find the right
+          Legacy chair for your space.
+
         </p>
+
 
         <a
-          class="btn primary large"
-          id="whatsappBtn"
           href="#"
+          id="whatsappMain"
+          class="button button-gold large-button"
           target="_blank"
         >
-          Chat on WhatsApp
+
+          Talk to Legacy
+
           <span>↗</span>
+
         </a>
 
       </div>
 
     </section>
 
+
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- ================= FOOTER ================= -->
+
   <footer>
 
-    <div class="footer-logo">
-      <span class="logo-mark">L</span>
-      <div>
-        <strong>LEGACY</strong>
-        <small>CHAIRS</small>
+    <div class="footer-brand">
+
+      <div class="brand-symbol">
+        L
       </div>
+
+      <div class="brand-name">
+        <strong>LEGACY</strong>
+        <span>CHAIRS</span>
+      </div>
+
     </div>
 
-    <p>
-      © <span id="year"></span> Legacy Chairs. Crafted for comfort.
-    </p>
 
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
+    <div class="footer-center">
+
+      <span>
+        PREMIUM SEATING
+      </span>
+
+      <span>
+        © <b id="year"></b> LEGACY CHAIRS
+      </span>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#collection">
+        Collection
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
     </div>
 
   </footer>
 
 
-  <!-- PRODUCT MODAL -->
-  <div class="modal" id="modal">
+  <!-- ================= MODAL ================= -->
 
-    <div class="modal-box">
+  <div class="modal" id="productModal">
 
-      <button class="close-modal" id="closeModal">
+    <div class="modal-inner">
+
+      <button
+        class="modal-close"
+        id="modalClose"
+      >
         ×
       </button>
 
-      <div class="eyebrow">
-        <span></span>
-        PRODUCT ENQUIRY
+
+      <div class="modal-visual">
+
+        <div id="modalCanvas"></div>
+
       </div>
 
-      <h2 id="modalTitle">
-        Legacy Chair
-      </h2>
 
-      <p>
-        Interested in this chair? Send us a WhatsApp message
-        and we'll help you with availability, colours and pricing.
-      </p>
+      <div class="modal-info">
 
-      <a
-        href="#"
-        target="_blank"
-        class="btn primary"
-        id="modalWhatsapp"
-      >
-        Enquire on WhatsApp →
-      </a>
+        <div class="eyebrow">
+          <span></span>
+          LEGACY COLLECTION
+        </div>
+
+
+        <h2 id="modalProduct">
+          Legacy X1
+        </h2>
+
+
+        <div
+          class="modal-price"
+          id="modalPrice"
+        >
+          ₹14,999
+        </div>
+
+
+        <p>
+
+          A premium seating experience engineered
+          around comfort, presence and everyday performance.
+
+        </p>
+
+
+        <div class="modal-specs">
+
+          <div>
+            <span>Material</span>
+            <strong>Premium Finish</strong>
+          </div>
+
+          <div>
+            <span>Movement</span>
+            <strong>360° Rotation</strong>
+          </div>
+
+          <div>
+            <span>Design</span>
+            <strong>Ergonomic</strong>
+          </div>
+
+        </div>
+
+
+        <a
+          href="#"
+          id="modalWhatsapp"
+          target="_blank"
+          class="button button-gold"
+        >
+
+          Enquire on WhatsApp
+
+          <span>↗</span>
+
+        </a>
+
+      </div>
 
     </div>
 
   </div>
 
+
+  <!-- THREE.JS -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+  ></script>
 
   <script src="script.js"></script>
 
